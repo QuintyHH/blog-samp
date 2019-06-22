@@ -1,4 +1,8 @@
 {
+  "config": {
+    "//": "set publish to false to skip this in production",
+    "publish": true
+  },
   "head": {
     "title": "CSS Tutorial",
     "description": "CSS is a language that describes the style of an HTML document and how HTML elements should be displayed."

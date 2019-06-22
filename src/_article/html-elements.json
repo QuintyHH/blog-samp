@@ -1,4 +1,8 @@
 {
+  "config": {
+    "//": "set publish to false to skip this in production",
+    "publish": true
+  },
   "head": {
     "title": "HTML Elements",
     "description": "An HTML element usually consists of a start tag and end tag, with the content inserted in between"

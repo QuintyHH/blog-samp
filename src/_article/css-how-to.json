@@ -1,4 +1,8 @@
 {
+  "config": {
+    "//": "set publish to false to skip this in production",
+    "publish": true
+  },
   "head": {
     "title": "CSS how to",
     "description": "When a browser reads a style sheet, it will format the HTML document according to the information in the style sheet."

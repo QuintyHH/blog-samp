@@ -2,5 +2,6 @@
   h3=article.title
   p=article.description
   .article-link
-    a(href=article.link) Read more about #{article.title} 
+    a(href=`${baseUrl}`+article.link) Read more about #{article.title} 
+    //- a(href=article.link) Read more about #{article.title}
     span.qblog-icon--chevron-down

@@ -14,8 +14,8 @@
   },
   "//": "CUSTOM CONFIGURATION",
   "config": {
-    "customUrl": "http://quintyhh.github.io/blog-samp/",
-    "githubUrl": "https://github.com/QuintyHH/blog-samp/",
+    "customUrl": "http://quintyhh.github.io/blog-samp",
+    "githubUrl": "https://github.com/quintyhh/blog-samp.git",
     "deployToGithubIo": true,
     "directory": {
       "development": "tmp",
@@ -37,7 +37,7 @@
       "sourceFileChange": false,
       "url": {
         "//": "this is recommended to avoid Linux/Windows capitalization issue",
-        "htmlExtensionOn": true,
+        "htmlExtensionOn": false,
         "toLowercase": true
       }
     },
@@ -66,7 +66,7 @@
   "bugs": {
     "url": "https://github.com/marianzburlea/pug-starter/issues"
   },
-  "homepage": "https://quintyhh.github.io/blog-samp/",
+  "homepage": "https://quintyhh.github.io/blog-samp",
   "devDependencies": {
     "@babel/cli": "7.2.3",
     "@babel/core": "7.3.3",

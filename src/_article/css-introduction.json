@@ -1,4 +1,8 @@
 {
+  "config": {
+    "//": "set publish to false to skip this in production",
+    "publish": true
+  },
   "head": {
     "title": "CSS Introduction",
     "description": "CSS stands for Cascading Style Sheets"

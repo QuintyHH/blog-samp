@@ -1,4 +1,8 @@
 {
+  "config": {
+    "//": "set publish to false to skip this in production",
+    "publish": true
+  },
   "head": {
     "title": "HTML Editors",
     "description": "Web pages can be created and modified by using professional HTML editors."
