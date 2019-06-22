@@ -1,8 +1,4 @@
 {
-  "config": {
-    "//": "set publish to false to skip this in production",
-    "publish": true
-  },
   "head": {
     "title": "CSS Syntax and Selectors",
     "description": "A CSS rule-set consists of a selector and a declaration block"

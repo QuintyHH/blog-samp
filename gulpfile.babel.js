@@ -24,7 +24,6 @@ import pug from './gulp/pug';
 import sass from './gulp/sass';
 import template from './gulp/template';
 import watch from './gulp/watch';
-import flip from './gulp/flip';
 import { printCompile } from './gulp/util/util.js';
 
 global.compileMode = 'all';
@@ -32,7 +31,7 @@ global.compileMode = 'all';
 const config = Object.assign({}, packageJsonData.config);
 const args = minimist(process.argv.slice(2));
 const dir = config.directory;
-const taskTarget = args.production ? `${dir.production}-haha` : dir.development;
+const taskTarget = args.production ? dir.production : dir.development;
 
 // Create a new browserSync instance
 const browserSync = browserSyncLib.create();
@@ -59,8 +58,6 @@ pug(taskOptionList);
 sass(taskOptionList);
 template(taskOptionList);
 watch(taskOptionList);
-flip(taskOptionList);
-
 // Server task with watch
 gulp.task(
   'dev',
@@ -88,8 +85,7 @@ gulp.task(
     'image',
     'sass',
     'pug',
-    'template',
-    'flip'
+    'template'
   )
 );
 
@@ -100,10 +96,7 @@ gulp.task('default', () => {
 
 const readline = require('readline');
 readline.emitKeypressEvents(process.stdin);
-if (process.stdin.setRawMode){
-  process.stdin.setRawMode(true)
-}
-
+process.stdin.setRawMode(true);
 process.stdin.on('keypress', (str, key) => {
   if (key.name === 'a') {
     compileMode = 'all';

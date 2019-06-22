@@ -1,8 +1,4 @@
 {
-  "config": {
-    "//": "set publish to false to skip this in production",
-    "publish": true
-  },
   "head": {
     "title": "HTML Introduction",
     "description": "HTML is the standard markup language for creating Web pages."

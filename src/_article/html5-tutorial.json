@@ -1,8 +1,4 @@
 {
-  "config": {
-    "//": "set publish to false to skip this in production",
-    "publish": true
-  },
   "head": {
     "title": "HTML5 Tutorial",
     "description": "With HTML you can create your own Web site. This tutorial teaches you everything about HTML."

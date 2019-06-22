@@ -1,4 +1,6 @@
 'use strict';
+
+import path from 'path';
 import gulpConfig from './util/config';
 
 const watch = ({ gulp, plugins, args, config, browserSync, taskTarget }) => {
@@ -7,13 +9,11 @@ const watch = ({ gulp, plugins, args, config, browserSync, taskTarget }) => {
   // Gulp watch task
   gulp.task('watch', () => {
     console.clear();
-    console.log(config.autoLaunchBrowser ? 'launch' : 'stay')
     if (!args.production) {
       browserSync.init({
         server: taskTarget,
         notify: false,
-        plugins: ['bs-eslint-message'],
-        open: config.autoLaunchBrowser
+        plugins: ['bs-eslint-message']
       });
 
       // Pug templates

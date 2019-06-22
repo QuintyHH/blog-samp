@@ -5,8 +5,7 @@ import del from 'del';
 
 const clean = ({
   gulp,
-  config,
-  taskTarget,
+  config
 }) => {
   const dir = config.directory;
 
@@ -17,7 +16,7 @@ const clean = ({
 
   // clean development project
   gulp.task('clean:production', del.bind(null, [
-    path.join(taskTarget)
+    path.join(dir.production)
   ]));
 
   // clean development project
